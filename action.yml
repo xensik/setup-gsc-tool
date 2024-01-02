@@ -1,0 +1,17 @@
+name: 'Setup GSC Tool'
+description: 'Github action to setup GSC Tool'
+branding:
+  icon: 'package'
+  color: 'blue'
+inputs:
+  version:
+    description: 'The version of GSC Tool to use'
+    required: true
+    default: '1.3.0'
+  path:
+    description: 'The path GSC Tool is installed to'
+    required: false
+    default: '.gsc-tool'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

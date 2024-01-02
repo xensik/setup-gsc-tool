@@ -1,0 +1,17 @@
+name: Main
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name:
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install GSC tool
+        uses: ./
+
+      - name: Compile GSC
+        run: gsc-tool comp iw5 pc ./test/test.gsc
