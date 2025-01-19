@@ -14,4 +14,4 @@ jobs:
         uses: ./
 
       - name: Compile GSC
-        run: gsc-tool comp iw5 pc ./test/test.gsc
+        run: gsc-tool -m comp -g iw5 -s pc ./test/test.gsc
