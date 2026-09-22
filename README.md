@@ -5,7 +5,7 @@ Github action to setup GSC Tool
 ## Inputs
 
 - `version` :
-The version of GSC Tool to use. Default `'1.4.7'`.
+The version of GSC Tool to use. Default `'1.5.0'`.
 
 - `path` :
 The path GSC Tool is installed to. Default `'.gsc-tool'`.
@@ -23,7 +23,7 @@ uses: xensik/setup-gsc-tool@v2
 ```yaml
 uses: xensik/setup-gsc-tool@v2
 with:
-  version: '1.4.7'
+  version: '1.5.0'
 ```
 
 ### Example usage with path
@@ -31,6 +31,6 @@ with:
 ```yaml
 uses: xensik/setup-gsc-tool@v2
 with:
-  version: '1.4.7'
+  version: '1.5.0'
   path: '.gsc-tool'
 ```
